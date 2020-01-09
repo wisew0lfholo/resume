@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:700|Roboto:400,700&display=swap');
+
+@mixin font-scaling($min, $scale) {
+    font-size: calc(#{$min + "px"} + (#{$min} * #{$scale}) * ((100vw - 325px) / (2514 - 325)));
+}
+
+@mixin height-scaling($min, $scale) {
+    height: calc(#{$min + "px"} + (#{$min} * #{$scale}) * ((100vw - 325px) / (2514 - 325)));
+}
+
+$font-body: 'Roboto', sans-serif;
+$font-heading: 'Alegreya', serif;

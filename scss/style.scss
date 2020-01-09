@@ -1,0 +1,240 @@
+@import "variables.scss";
+
+// Import all other scss files that need to be complied.
+
+/**
+ * NoScript Peeps
+ */
+html {
+    #no-js {
+        display: none;
+    }
+
+    &.no-js {
+        #header,
+        #hero,
+        #footer {
+            display: none !important;
+        }
+
+        #no-js {
+            display: block !important;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        line-height: 1.2;
+        margin: 0;
+        color: #888;
+        display: table;
+        font-family: sans-serif;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+
+        body {
+            background: none;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        @media only screen and (max-width: 280px) {
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+        }
+    }
+}
+
+body {
+    font-family: $font-body;
+    font-weight: 500;
+
+    .header {
+        background: black;
+        color: white;
+        font-family: $font-heading;
+        padding-bottom: .75em;
+        padding-top: .75em;
+        text-align: right;
+
+        h1 {
+            @include font-scaling(20, 2.4);
+
+            // margin-top: -0.5em;
+        }
+
+        #title {
+            @include font-scaling(35, 2.6);
+        }
+
+        a.logo {
+            display: none;
+            float: right;
+            padding-top: 1em;
+            img {
+                @include height-scaling(50, 5);
+            }
+        }
+    }
+
+    .row {
+        margin-top: 1.5em;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    a {
+        text-decoration: underline;
+        color: black;
+    }
+
+    h2 {
+        font-family: $font-heading;
+
+        @include font-scaling(16, 1.75);
+    }
+
+    hr {
+        border-top: 0.33em solid black;
+
+        &:last-of-type {
+            border-top: 0.75em solid black;
+        }
+    }
+
+    #email, #phone, #website {
+        font-family: $font-heading;
+        text-align: right;
+
+        @include font-scaling(16, 1.75);
+    }
+
+    #summary {
+        p {
+            @include font-scaling(11, 1.15);
+            padding-left: 40px;
+            // text-align: justify;
+        }
+    }
+
+    #experience {
+        > ul {
+            list-style-type: none;
+
+            > li {
+                padding-bottom: 1em;
+                @include font-scaling(13, 1.15);
+
+                .role {
+                    // text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                .company {
+                    font-style: italic;
+                }
+
+                .date {
+                    padding-bottom: 0.5em;
+                }
+
+                > ul {
+                    @include font-scaling(11, 1.15);
+                }
+            }
+        }
+    }
+
+    #projects {
+        > ul {
+            list-style-type: none;
+
+            > li {
+                // text-transform: uppercase;
+                font-weight: 700;
+                padding-bottom: 1em;
+                @include font-scaling(13, 1.15);
+
+                a {
+                    text-transform: none;
+                    font-weight: 500;
+
+                    // font-style: italic;
+               
+                }
+
+                > ul {
+                    padding-top: 0.5em;
+                    text-transform: none;
+                    font-weight: 500;
+                    @include font-scaling(11, 1.15);
+
+                    > li:last-child {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+
+    #education {
+        > ul {
+            list-style-type: none;
+
+            > li {
+                padding-bottom: 1em;
+                @include font-scaling(13, 1.15);
+
+                .institution {
+                    // text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                .subject {
+                    font-style: italic;
+                    @include font-scaling(11, 1.15);
+                }
+
+                .time {
+                    @include font-scaling(11, 1.15);
+                    padding-bottom: 0.25em;
+                }
+
+                > ul {
+                    @include font-scaling(11, 1.15);
+                }
+            }
+        }
+    }
+
+    #languages,
+    #skills,
+    #tools,
+    #frameworks {
+        ul {
+            @include font-scaling(11, 1.15);
+            // text-transform: uppercase;
+            // font-weight: bold;
+        }
+    }
+
+    #badges.d-md-none,  #badges.d-md-none img {
+        height: 130px;
+        width: 130px;
+    }
+}

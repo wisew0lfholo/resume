@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:700|Roboto:400,700&display=swap");
+/**
+ * NoScript Peeps
+ */
+html #no-js {
+  display: none; }
+html.no-js {
+  line-height: 1.2;
+  margin: 0;
+  color: #888;
+  display: table;
+  font-family: sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%; }
+  html.no-js #header,
+  html.no-js #hero,
+  html.no-js #footer {
+    display: none !important; }
+  html.no-js #no-js {
+    display: block !important;
+    text-align: center;
+    padding: 1rem; }
+  html.no-js body {
+    background: none;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto; }
+  html.no-js h1 {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400; }
+  @media only screen and (max-width: 280px) {
+    html.no-js body, html.no-js p {
+      width: 95%; }
+    html.no-js h1 {
+      font-size: 1.5em;
+      margin: 0 0 0.3em; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; }
+  body .header {
+    background: black;
+    color: white;
+    font-family: "Alegreya", serif;
+    padding-bottom: .75em;
+    padding-top: .75em;
+    text-align: right; }
+    body .header h1 {
+      font-size: calc(20px + (20 * 2.4) * ((100vw - 325px) / (2514 - 325))); }
+    body .header #title {
+      font-size: calc(35px + (35 * 2.6) * ((100vw - 325px) / (2514 - 325))); }
+    body .header a.logo {
+      display: none;
+      float: right;
+      padding-top: 1em; }
+      body .header a.logo img {
+        height: calc(50px + (50 * 5) * ((100vw - 325px) / (2514 - 325))); }
+  body .row {
+    margin-top: 1.5em; }
+  body ul {
+    list-style-type: square; }
+  body a {
+    text-decoration: underline;
+    color: black; }
+  body h2 {
+    font-family: "Alegreya", serif;
+    font-size: calc(16px + (16 * 1.75) * ((100vw - 325px) / (2514 - 325))); }
+  body hr {
+    border-top: 0.33em solid black; }
+    body hr:last-of-type {
+      border-top: 0.75em solid black; }
+  body #email, body #phone, body #website {
+    font-family: "Alegreya", serif;
+    text-align: right;
+    font-size: calc(16px + (16 * 1.75) * ((100vw - 325px) / (2514 - 325))); }
+  body #summary p {
+    font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325)));
+    padding-left: 40px; }
+  body #experience > ul {
+    list-style-type: none; }
+    body #experience > ul > li {
+      padding-bottom: 1em;
+      font-size: calc(13px + (13 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+      body #experience > ul > li .role {
+        font-weight: 700; }
+      body #experience > ul > li .company {
+        font-style: italic; }
+      body #experience > ul > li .date {
+        padding-bottom: 0.5em; }
+      body #experience > ul > li > ul {
+        font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+  body #projects > ul {
+    list-style-type: none; }
+    body #projects > ul > li {
+      font-weight: 700;
+      padding-bottom: 1em;
+      font-size: calc(13px + (13 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+      body #projects > ul > li a {
+        text-transform: none;
+        font-weight: 500; }
+      body #projects > ul > li > ul {
+        padding-top: 0.5em;
+        text-transform: none;
+        font-weight: 500;
+        font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+        body #projects > ul > li > ul > li:last-child {
+          font-style: italic; }
+  body #education > ul {
+    list-style-type: none; }
+    body #education > ul > li {
+      padding-bottom: 1em;
+      font-size: calc(13px + (13 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+      body #education > ul > li .institution {
+        font-weight: 700; }
+      body #education > ul > li .subject {
+        font-style: italic;
+        font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+      body #education > ul > li .time {
+        font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325)));
+        padding-bottom: 0.25em; }
+      body #education > ul > li > ul {
+        font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+  body #languages ul,
+  body #skills ul,
+  body #tools ul,
+  body #frameworks ul {
+    font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
+  body #badges.d-md-none, body #badges.d-md-none img {
+    height: 130px;
+    width: 130px; }
+
+/*# sourceMappingURL=style.css.map */
