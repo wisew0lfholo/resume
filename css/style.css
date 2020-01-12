@@ -80,34 +80,34 @@ body {
   body #summary p {
     font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325)));
     padding-left: 40px; }
-  body #experience > ul {
+  body div[partial='experience'] > ul {
     list-style-type: none; }
-    body #experience > ul > li {
+    body div[partial='experience'] > ul > li {
       padding-bottom: 1em;
       font-size: calc(13px + (13 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
-      body #experience > ul > li .role {
+      body div[partial='experience'] > ul > li .role {
         font-weight: 700; }
-      body #experience > ul > li .company {
+      body div[partial='experience'] > ul > li .company {
         font-style: italic; }
-      body #experience > ul > li .date {
+      body div[partial='experience'] > ul > li .date {
         padding-bottom: 0.5em; }
-      body #experience > ul > li > ul {
+      body div[partial='experience'] > ul > li > ul {
         font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
-  body #projects > ul {
+  body div[partial='projects'] > ul {
     list-style-type: none; }
-    body #projects > ul > li {
+    body div[partial='projects'] > ul > li {
       font-weight: 700;
       padding-bottom: 1em;
       font-size: calc(13px + (13 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
-      body #projects > ul > li a {
+      body div[partial='projects'] > ul > li a {
         text-transform: none;
         font-weight: 500; }
-      body #projects > ul > li > ul {
+      body div[partial='projects'] > ul > li > ul {
         padding-top: 0.5em;
         text-transform: none;
         font-weight: 500;
         font-size: calc(11px + (11 * 1.15) * ((100vw - 325px) / (2514 - 325))); }
-        body #projects > ul > li > ul > li:last-child {
+        body div[partial='projects'] > ul > li > ul > li:last-child {
           font-style: italic; }
   body #education > ul {
     list-style-type: none; }
