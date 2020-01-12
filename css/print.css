@@ -7,6 +7,9 @@
 a[href]:after {
   display: none; }
 
+.print {
+  display: block !important; }
+
 .header {
   background: black !important; }
   .header * {

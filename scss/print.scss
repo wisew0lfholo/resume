@@ -10,6 +10,10 @@ a[href]:after {
     display: none;
 }
 
+.print {
+    display: block !important;
+}
+
 .header {
     background: black !important;
 
@@ -53,8 +57,6 @@ ul {
         }
     }
 }
-
-
 
 hr:last-of-type {
     margin-bottom: 3em;

@@ -40,6 +40,8 @@ html.no-js {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 500; }
+  body .print {
+    display: none; }
   body .header {
     background: black;
     color: white;
