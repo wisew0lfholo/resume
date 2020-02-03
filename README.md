@@ -1,4 +1,4 @@
-# Explore
+# Resume
 
 A single-page resume website that prints into a neat PDF (in Chrome at least).
 
