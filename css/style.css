@@ -133,4 +133,7 @@ body {
     height: 130px;
     width: 130px; }
 
+.badges p span {
+  margin: auto !important; }
+
 /*# sourceMappingURL=style.css.map */
