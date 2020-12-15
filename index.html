@@ -2,12 +2,13 @@
 <html class="no-js" lang="en">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127664101-1"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y637CYVKHB"></script>
         <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-127664101-1');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Y637CYVKHB');
         </script>
         <!-- Page specific metadata -->
         <title>Resume | Justin P. Carson</title>
@@ -21,7 +22,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -54,9 +55,8 @@
                     <div class="col-12 d-sm-block d-md-none summary" partial="summary"></div>
                 </div>
                 <hr/>
-                <div class="row">
+                <div class="row no-print">
                     <div class="col-md-4 col-6">
-                        
                         <div class="languages" partial="languages"></div>
                         <div class="frameworks" partial="frameworks"></div>
                     </div>
@@ -66,9 +66,19 @@
                         
                     </div>
                 </div>
+                <div class="row print">
+                    <div class="col-sm-6">
+                        <div class="languages" partial="languages"></div>
+                        <div class="frameworks" partial="frameworks"></div>
+                    </div>
+                    <div class="col-sm-6 skills" partial="skills"></div>
+                </div>
                 <hr/>
                 <div class="row">
-                    <div class="col-sm-6 education" partial="education"></div>
+                    <div class="col-sm-6">
+                        <div class="education" partial="education"></div>
+                        <div class="badges print" partial="badges"></div>  
+                    </div>
                     <div class="col-sm-6" partial="experience"></div>
                 </div>
             </div>
@@ -78,7 +88,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>

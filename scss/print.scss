@@ -10,8 +10,16 @@ a[href]:after {
     display: none;
 }
 
+.no-print {
+    display: none !important;
+}
+
 .print {
     display: block !important;
+}
+
+.print.row {
+    display: flex !important;
 }
 
 .header {
@@ -60,4 +68,8 @@ ul {
 
 hr:last-of-type {
     margin-bottom: 3em;
+}
+
+.badges {
+    padding-top: 1em;
 }

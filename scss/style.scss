@@ -58,13 +58,13 @@ html {
     }
 }
 
+.print {
+    display: none;
+}
+
 body {
     font-family: $font-body;
     font-weight: 500;
-
-    .print {
-        display: none;
-    }
 
     .header {
         background: black;
